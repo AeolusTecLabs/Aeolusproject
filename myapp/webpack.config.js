@@ -1,5 +1,4 @@
 var path = require('path');
-require("babel-register");
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
@@ -8,7 +7,7 @@ module.exports = {
     entry: './src/index.js',
     output: {
         path: path.resolve(__dirname, 'dist'),
-        filename: "bundle.js"
+        filename: "public/bundle.js"
     },
     resolve: {
         extensions: ['.js', '.jsx']
